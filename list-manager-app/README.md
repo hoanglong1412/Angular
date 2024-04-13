@@ -8,5 +8,8 @@ cmd: cd list-manager-app
 cmd: ng serve
 cmd: o
 
-##import PrimeNG
+##Import PrimeNG
 cmd: npm install primeng
+
+##Change PrimeNG theme
+link theme: \node_modules\primeng\resources\themes\
