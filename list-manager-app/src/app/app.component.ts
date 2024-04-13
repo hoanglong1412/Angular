@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { TaskListComponent } from './task-list/task-list.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
 
 const ChildComponent = [TaskFormComponent, TaskListComponent]
-const UIModule = [ButtonModule]
+const UIModule = [ButtonModule, CalendarModule]
 
 
 @Component({

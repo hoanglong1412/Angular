@@ -13,3 +13,6 @@ cmd: npm install primeng
 
 ##Change PrimeNG theme
 link theme: \node_modules\primeng\resources\themes\
+
+##Use PrimeNG animation
+cmd: npm install @angular/animations
