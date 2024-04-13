@@ -7,3 +7,6 @@ cmd: ng new list-manager-app
 cmd: cd list-manager-app
 cmd: ng serve
 cmd: o
+
+##import PrimeNG
+cmd: npm install primeng
