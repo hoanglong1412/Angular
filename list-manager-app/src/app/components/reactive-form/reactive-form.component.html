@@ -1,0 +1,20 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="first-name">First Name: </label>
+  <input id="first-name" type="text" formControlName="firstName">
+  <br>
+  <br>
+  <label for="last-name">Last Name: </label>
+  <input id="last-name" type="text" formControlName="lastName">
+  <!-- <button type="submit">send data</button> -->
+  <p>Complete the form to enable button.</p>
+  <button type="submit"
+  >Submit</button>
+  <!-- [disabled]="!form.valid" -->
+
+  @if (form.controls['firstName'].errors?.['minlength']) {
+    <div>firstName must be at least 4 characters</div>
+    }
+  @if (form.controls['lastName'].errors?.['passwordStrength']) {
+    <div>lastName validate is err</div>
+    }
+</form>
